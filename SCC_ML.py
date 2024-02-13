@@ -1,5 +1,5 @@
 '''
-import streamlit as st; from PIL import Image
+
 import pandas as pd
 import numpy as np
 from sklearn.ensemble         import RandomForestRegressor
@@ -18,6 +18,7 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.ensemble import BaggingRegressor
 from xgboost import XGBRegressor
 '''
+import streamlit as st; from PIL import Image
 import joblib
 
 CS = joblib.load('Stack3_CS.joblib')
