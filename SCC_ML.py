@@ -18,7 +18,7 @@ from sklearn.ensemble import BaggingRegressor
 from xgboost import XGBRegressor
 import joblib
 
-CS = joblib.load('Stack3_CS.joblib')
+CS = joblib.load('https://github.com/tejinderpal-singh-23/SCC_ML/blob/main/Stack3_CS.joblib')
 SF = joblib.load('https://github.com/tejinderpal-singh-23/SCC_ML/blob/main/BG_SF.joblib')
 T500= joblib.load('BG_T500.joblib')
 VF =joblib.load('GBR_VF.joblib')
