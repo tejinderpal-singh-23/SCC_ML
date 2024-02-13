@@ -17,7 +17,7 @@ import numpy as np
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.ensemble import AdaBoostRegressor
 from sklearn.ensemble import BaggingRegressor
-from xgboost import XGBRegressor
+#from xgboost import XGBRegressor
 import joblib
 import pickle
 #to load model .joblib from google drive
