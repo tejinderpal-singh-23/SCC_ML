@@ -1,3 +1,4 @@
+'''
 import streamlit as st; from PIL import Image
 import pandas as pd
 import numpy as np
@@ -17,7 +18,7 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.ensemble import BaggingRegressor
 from xgboost import XGBRegressor
 import joblib
-
+'''
 CS = joblib.load('Stack3_CS.joblib')
 SF = joblib.load('BG_SF.joblib')
 T500= joblib.load('BG_T500.joblib')
