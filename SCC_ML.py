@@ -15,11 +15,11 @@ from sklearn import metrics
 import numpy as np
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.ensemble import BaggingRegressor
-#from xgboost import XGBRegressor
+from xgboost import XGBRegressor
 import joblib
 
 CS = joblib.load('Stack3_CS.joblib')
-SF =joblib.load('BG_SF.joblib')
+SF = joblib.load('BG_SF.joblib')
 T500= joblib.load('BG_T500.joblib')
 VF =joblib.load('GBR_VF.joblib')
 st.write('Self compacting recycled aggregate concrete Compressive Strength and fresh properties predictor:')
