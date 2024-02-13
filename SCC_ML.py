@@ -22,7 +22,7 @@ import joblib
 import pickle
 #to load model .joblib from google drive
 CS=pickle.load(open('Stack3_CS.pkl','rb'))
-SF=pickle.load(open('Stack6_SF.pkl','rb'))
+SF=pickle.load(open('BG_SF.pkl','rb'))
 T500=pickle.load(open('BG_T500.pkl','rb'))
 VF=pickle.load(open('GBR_VF.pkl','rb'))
 '''
