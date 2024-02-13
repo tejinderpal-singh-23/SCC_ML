@@ -20,18 +20,18 @@ from sklearn.ensemble import BaggingRegressor
 #from xgboost import XGBRegressor
 import joblib
 import pickle
-
+'''
 #to load model .joblib from google drive
 CS=pickle.load(open('Stack3_CS.pkl','rb'))
 SF=pickle.load(open('BG_SF.pkl','rb'))
 T500=pickle.load(open('BG_T500.pkl','rb'))
 VF=pickle.load(open('GBR_VF.pkl','rb'))
 '''
-CS = joblib.load('/content/drive/MyDrive/SCC/CS/Stack3_CS.joblib')
-SF =joblib.load('/content/drive/MyDrive/SCC/SF/Stack6_SF.joblib')
-T500= joblib.load('/content/drive/MyDrive/SCC/T500/BG_T500.joblib')
-VF =joblib.load('/content/drive/MyDrive/SCC/VF/GBR_VF.joblib')
-'''
+CS = joblib.load('Stack3_CS.joblib')
+SF =joblib.load('BG_SF.joblib')
+T500= joblib.load('T500/BG_T500.joblib')
+VF =joblib.load('GBR_VF.joblib')
+
 st.write('Self compacting recycled aggregate concrete Compressive Strength and fresh properties predictor:')
 Cem=st.number_input('Cement and pozzolana content kg/cum')
 FAsh=st.number_input('Fly Ash content in kg/cum')
