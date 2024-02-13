@@ -20,7 +20,7 @@ from sklearn.ensemble import BaggingRegressor
 #from xgboost import XGBRegressor
 import joblib
 import pickle
-!pip install mlxtend
+pip install mlxtend
 from mlxtend.classifier import StackingClassifier
 #to load model .joblib from google drive
 CS=pickle.load(open('Stack3_CS.pkl','rb'))
