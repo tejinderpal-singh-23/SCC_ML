@@ -20,14 +20,8 @@ from sklearn.ensemble import BaggingRegressor
 #from xgboost import XGBRegressor
 import joblib
 import pickle
-'''
-#to load model .joblib from google drive
-CS=pickle.load(open('Stack3_CS.pkl','rb'))
-SF=pickle.load(open('BG_SF.pkl','rb'))
-T500=pickle.load(open('BG_T500.pkl','rb'))
-VF=pickle.load(open('GBR_VF.pkl','rb'))
-'''
-CS = joblib.load('Stack3_CS.joblib')
+
+#CS = joblib.load('Stack3_CS.joblib')
 SF =joblib.load('BG_SF.joblib')
 T500= joblib.load('T500/BG_T500.joblib')
 VF =joblib.load('GBR_VF.joblib')
@@ -53,7 +47,7 @@ if st.button('Predict properties'):
   SpB=((Water)/(Cem+FAsh))
   input1 = [BTa,FAshB,BFAgg,FACA,RACA,WB,LS,SpB]
   input1 = np.array(input1).reshape(1, -1)
-  CStr = CS.predict(input1)
+  #CStr = CS.predict(input1)
   SFlow = SF.predict(input1)
   T500time= T500.predict(input1)
   VFun = VF.predict(input1)
