@@ -19,7 +19,7 @@ from sklearn.ensemble import AdaBoostRegressor
 from sklearn.ensemble import BaggingRegressor
 import joblib
 import pickle
-
+'''
 CS = joblib.load('Stack3_CS.joblib')
 SF =joblib.load('BG_SF.joblib')
 T500= joblib.load('BG_T500.joblib')
@@ -75,6 +75,7 @@ if st.button('Predict properties'):
         else:
           st.write("Error: V-Funnel time could not be predicted.")
   st.write("Rough prediction of T500 time:"+str(T500time)+"s")
+'''
 st.write("Note: The predicted values are based on machine learning models deveoped by the author. "
          "The research in preliminary stage and the values are just for giving a rough idea of the properties of Self Compacting Recycled Aggregate Concretes"
          "The results shall not be considered as final and experimental assessment of properties shall be done in practice.")
