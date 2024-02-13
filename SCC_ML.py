@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st; from PIL import Image
 import pandas as pd
 import numpy as np
 from sklearn.ensemble         import RandomForestRegressor
@@ -17,7 +17,6 @@ import numpy as np
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.ensemble import AdaBoostRegressor
 from sklearn.ensemble import BaggingRegressor
-#from xgboost import XGBRegressor
 import joblib
 import pickle
 
@@ -25,7 +24,6 @@ CS = joblib.load('Stack3_CS.joblib')
 SF =joblib.load('BG_SF.joblib')
 T500= joblib.load('BG_T500.joblib')
 VF =joblib.load('GBR_VF.joblib')
-
 st.write('Self compacting recycled aggregate concrete Compressive Strength and fresh properties predictor:')
 Cem=st.number_input('Cement and pozzolana content kg/cum')
 FAsh=st.number_input('Fly Ash content in kg/cum')
@@ -34,7 +32,6 @@ NAgg=st.number_input('Normal Aggregates content in kg/cum')
 RCA=st.number_input('Recycled coarse aggregates content in kg/cum')
 Water=st.number_input('Water contnet in kg/cum')
 Spz=st.number_input('Superplasticizer content in kg/cum')
-
 
 if st.button('Predict properties'):
   BTa=((Cem + FAsh)/(FAgg + NAgg+RCA))
