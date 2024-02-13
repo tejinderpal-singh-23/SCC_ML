@@ -15,6 +15,7 @@ from sklearn import metrics
 import numpy as np
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.ensemble import BaggingRegressor
+pip install xgboost==2.0.3
 from xgboost import XGBRegressor
 import joblib
 
