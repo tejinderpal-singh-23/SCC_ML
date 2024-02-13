@@ -21,7 +21,7 @@ import joblib
 CS = joblib.load('https://github.com/tejinderpal-singh-23/SCC_ML/blob/main/Stack3_CS.joblib')
 SF = joblib.load('https://github.com/tejinderpal-singh-23/SCC_ML/blob/main/BG_SF.joblib')
 T500= joblib.load('BG_T500.joblib')
-VF =joblib.load('GBR_VF.joblib')
+VF =joblib.load('https://github.com/tejinderpal-singh-23/SCC_ML/blob/main/GBR_VF.joblib')
 st.write('Self compacting recycled aggregate concrete Compressive Strength and fresh properties predictor:')
 Cem=st.number_input('Cement and pozzolana content kg/cum')
 FAsh=st.number_input('Fly Ash content in kg/cum')
