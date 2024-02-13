@@ -1,7 +1,6 @@
 '''
 
-import pandas as pd
-import numpy as np
+
 from sklearn.ensemble         import RandomForestRegressor
 from sklearn.linear_model     import LinearRegression
 from sklearn.tree             import DecisionTreeRegressor
@@ -20,7 +19,8 @@ from xgboost import XGBRegressor
 '''
 import streamlit as st; from PIL import Image
 import joblib
-
+import pandas as pd
+import numpy as np
 CS = joblib.load('Stack3_CS.joblib')
 SF = joblib.load('BG_SF.joblib')
 T500= joblib.load('BG_T500.joblib')
