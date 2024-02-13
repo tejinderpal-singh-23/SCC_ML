@@ -20,10 +20,11 @@ from sklearn.ensemble import BaggingRegressor
 #from xgboost import XGBRegressor
 import joblib
 import pickle
-
-#CS = joblib.load('Stack3_CS.joblib')
+print("Before loading joblib files")
+CS = joblib.load('Stack3_CS.joblib')
+print("After loading CS joblib file")
 SF =joblib.load('BG_SF.joblib')
-T500= joblib.load('T500/BG_T500.joblib')
+T500= joblib.load('BG_T500.joblib')
 VF =joblib.load('GBR_VF.joblib')
 
 st.write('Self compacting recycled aggregate concrete Compressive Strength and fresh properties predictor:')
@@ -47,7 +48,7 @@ if st.button('Predict properties'):
   SpB=((Water)/(Cem+FAsh))
   input1 = [BTa,FAshB,BFAgg,FACA,RACA,WB,LS,SpB]
   input1 = np.array(input1).reshape(1, -1)
-  #CStr = CS.predict(input1)
+  CStr = CS.predict(input1)
   SFlow = SF.predict(input1)
   T500time= T500.predict(input1)
   VFun = VF.predict(input1)
