@@ -11,16 +11,14 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score,mean_absolute_error,mean_squared_error
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import cross_validate
-from sklearn.ensemble import ExtraTreesRegressor
 from sklearn import metrics
 import numpy as np
 from sklearn.neighbors import KNeighborsRegressor
-from sklearn.ensemble import AdaBoostRegressor
 from sklearn.ensemble import BaggingRegressor
 import joblib
-import pickle
-'''
+
 CS = joblib.load('Stack3_CS.joblib')
+'''
 SF =joblib.load('BG_SF.joblib')
 T500= joblib.load('BG_T500.joblib')
 VF =joblib.load('GBR_VF.joblib')
