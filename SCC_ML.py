@@ -21,10 +21,10 @@ import streamlit as st; from PIL import Image
 import joblib
 import pandas as pd
 import numpy as np
-CS = joblib.load('Stack3_CS.joblib')
-SF = joblib.load('BG_SF.joblib')
-T500= joblib.load('BG_T500.joblib')
-VF =joblib.load('GBR_VF.joblib')
+CS = joblib.load('GBR_CS.joblib')
+SF = joblib.load('Stack4_SF.joblib')
+T500= joblib.load('Stack5_T500.joblib')
+VF =joblib.load('Stack4_VF.joblib')
 st.write('Self compacting recycled aggregate concrete Compressive Strength and fresh properties predictor:')
 Cem=st.number_input('Cement and pozzolana content kg/cum')
 FAsh=st.number_input('Fly Ash content in kg/cum')
