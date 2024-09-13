@@ -78,7 +78,7 @@ if st.button('Predict properties'):
   st.write("Rough prediction of T500 time:"+str(T500time)+"s")
 
 st.write("Note:  The predicted values are based on machine learning models deveoped by the author. "
-         "The research is in initial stages and the values are just for giving a rough idea of the properties of Self Compacting Recycled Aggregate Concretes"
+         "The research is in initial stages and the values are just for giving a rough idea of the properties of Self Compacting Recycled Aggregate Concretes."
          " The results shall not be considered as final and experimental assessment of properties shall be done in practice.")
 image1=Image.open('developed2.png')
 st.image(image1)
